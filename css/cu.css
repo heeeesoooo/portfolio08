@@ -1,0 +1,54 @@
+* {
+    outline: 1px solid tomato
+}
+
+/* ----------------------------- */
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* ---------------header-------------- */
+
+#topBanner .inner ul {
+    display: flex;
+    gap: 30px;
+    line-height: 15px;
+    justify-content: right;
+}
+
+#topBanner .inner ul li {
+    font-size: 14px;
+    line-height: 50px;
+}
+
+#topBanner .inner ul li~li::before {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #444;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+#header {}
+
+
+#header .inner {
+    display: flex;
+}
+
+#header .inner .gnb ul {
+    display: flex;
+}
+
+
+
+
+
+/* ---------------mainVisual-------------- */
+
+.main_slide {}
