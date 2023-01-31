@@ -1,0 +1,2772 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- head -->
+
+
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>NICE TO CU</title>
+
+    <meta name="description" content="24시간 편의점, 편의점 프랜차이즈, 편의점택배, 택배, 상품안내, 가맹 시스템, 창업 상담 제공." />
+
+    <meta name="keywords" content="CVS for You, CU, BGF Retail, BGF 리테일, 비지에프 리테일, 한국형 편의점, 편의점" />
+
+    <meta name="title" content="CU" />
+
+    <meta name="author" content="BGF Retail, BGF 리테일, 비지에프 리테일j, CVS for You, CU, Wylie" />
+
+    <meta property="og:image" content="/images/facebook.jpg" />
+
+    <meta property="og:title" content="CU" />
+
+    <meta property="og:description" content="24시간 편의점, 편의점 프랜차이즈, 편의점택배, 택배, 상품안내, 가맹 시스템, 창업 상담 제공." />
+
+    <meta name="generator" content="EditPlus Text Editor v3.41" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/images/ico/cu.ico" />
+    <link rel="canonical" href="http://cu.bgfretail.com" />
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css" /><!-- Swiper css -->
+
+    <link rel="stylesheet" type="text/css" href="/css/common_new.css" media="all" /> <!-- 리뉴얼 css -->
+
+    <link rel="stylesheet" type="text/css" href="/css/font.css" media="all" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  loading layer -->
+    <style type="text/css">
+        .AjaxLoading {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+        }
+
+        .AjaxLoading .bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1001;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.6;
+            filter: alpha(opacity=30);
+        }
+
+        .AjaxLoading .ico {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1002;
+            width: 100%;
+            height: 100%;
+            background: url("/images/common/loading.gif") no-repeat center center;
+        }
+    </style>
+
+
+
+    <link rel="stylesheet" type="text/css" href="/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+    <script type="text/javascript" src="/js/sns.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="/js/front.js"></script>
+    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/js/font-controller.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/jquery.backgroundpos.js"></script>
+    <script type="text/javascript" src="/js/jquery.zclip.min.js"></script>
+    <script type="text/javascript" src="/js/sns-link.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script> <!-- 2019-05-23 -->
+    <!-- <script type="text/javascript" src="/js/swiper-bundle.min.js"></script> --> <!-- 2022-02-18 -->
+    <script type="text/javascript" src="/js/swiper.min.js"></script> <!-- 2022-02-18 -->
+
+    <script type="text/javascript" src="/js/ui.common.js"></script> <!-- 2022-02-18 -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.numOnly').numberOnly();
+        });
+
+
+    </script>
+    <!-- // head -->
+    <script type="text/javascript">
+        function CallLoading() {
+            var Loading = $('.AjaxLoading');
+            Loading.fadeIn(200);
+        }
+
+        function RemoveLoading() {
+            var Loading = $('.AjaxLoading');
+            Loading.fadeOut(200);
+
+        }
+
+    </script>
+    <!-- 구글통계 -->
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-50424839-2', 'bgfretail.com');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+
+
+
+
+
+<script type="text/javascript" src="/js/tmpl.min.js"></script>
+<script type="text/javascript" src="/js/oauth.js"></script>
+<script type="text/javascript" src="/js/sha1.js"></script>
+
+<script type="text/javascript">
+    var todate = "2023-1-27 11:05:07"; //현재시간(서버)
+    var date = new Date();
+    var year = "2023";
+    var month = "1";
+    var day = "27";
+    var hour = "11";
+
+    $(document).ready(function () {
+
+        $('#gnb_swiper').find('.swiper-slide').removeClass('on');
+
+
+        // 오늘 하루 안보기
+        $("#notToday").click(function () {
+            setCookie("popup_20190819", "Y", "1");
+            $("div[class=openpopup_wrapper]").hide();
+            return false;
+        });
+
+        // 닫기
+        $("a.close_pup").click(function () {
+            $("div[class=openpopup_wrapper]").hide();
+            return false;
+        });
+
+
+        $.ajax({
+            type: "post",
+            url: "/monthMenuViewYn.do",
+            dataType: 'json',
+            success: function (data) {
+                if (data.status == 'Y') {
+                    var EventTab = $('.eventTab');
+                    var tophtml = '<li><a href="/event/month.do?category=event&depth2=6&sf=N">이달의 행사</a></li>';
+                    $('#monthmenutop').html(tophtml);
+                }
+            },
+            error: function (data) {
+
+            }
+        });
+
+        // xml escape 방지 - global 설정
+
+        tmpl.encode = function (s) {
+            return s;
+        };
+
+        var week = new Array('일', '월', '화', '수', '목', '금', '토');
+
+        // naver blog rss 가져오기
+        $.ajax({
+            url: "/brand_info/blog_data.do",
+            dataType: "xml",
+            success: function (data) {
+                $(data).find('item').each(function (idx) {
+                    var $entry = $(this);
+
+                    // 날짜 형식 변환
+                    var pDate = new Date($entry.find('pubDate').text());
+                    var hh = pDate.getHours();
+                    var m = pDate.getMinutes();
+                    var s = pDate.getSeconds();
+                    var dd = '오전';
+                    var h = hh;
+
+                    if (h >= 12) {
+                        h = hh - 12;
+                        dd = '오후';
+                    }
+                    if (h == 0) {
+                        h = 12;
+                    }
+                    m = m < 10 ? "0" + m : m;
+                    s = s < 10 ? "0" + s : s;
+
+                    // template 에 전달할 파라미터 구성
+                    var param = {};
+                    param.published = pDate.getFullYear() + '년 ' + (pDate.getMonth() + 1) + '월 ' + pDate.getDate() + '일 ' + week[pDate.getDay()] + '요일, ' + dd + ' ' + h + ':' + m + ':' + s;
+                    param.content = $entry.find('description').text();
+                    param.title = $entry.find('title').text();
+                    param.url = $entry.find('link').text();
+                    $('#blog ul').append(tmpl("tmpl-blog", param));
+                });
+            }
+        });
+    });
+
+    function mainPopup123() {
+        var winHeight = screen.availHeight;
+        var winWidth = screen.availWidth;
+        var winX = window.screenX || window.screenLeft || 0;
+        var winY = window.screenY || window.screenTop || 0;
+
+        var popWidth = 450;
+        var popHeight = 450;
+
+        var popX = winX + (winWidth - popWidth) / 2;
+        var popY = winY + (winHeight - popHeight) / 2;
+
+        var frm = document.mainEventFrm;
+
+        window.open("", "POP1", "toolbar=no,menubar=no,scrollbars=yes,resizable=no,width=" + popWidth + "px,height=" + popHeight + "px, top=" + popY + ",left=" + popX);
+
+        frm.target = "POP1";
+        frm.action = $("#popupUrl").val();
+        frm.submit();
+    }
+
+
+    function view(val) {
+        $('#gdIdx').val(val);
+        $("#listForm").attr({
+            action: "/product/view.do?category=event&gdIdx=" + val,
+            method: "post"
+        }).submit();
+    }
+
+    //쿠키
+    function getCookie(cookieName) {
+        thisCookie = document.cookie.split("; ");
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1];
+            }
+        }
+        return "";
+    }
+
+    //24시간 기준 쿠키 설정하기
+
+    //expiredays 후의 클릭한 시간까지 쿠키 설정
+    function setCookie(name, value, expiredays) {
+        var todayDate = new Date();
+        todayDate.setDate(todayDate.getDate() + expiredays);
+        document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+    }
+
+    //00:00 시 기준 쿠키 설정하기
+
+    //expiredays 의 새벽  00:00:00 까지 쿠키 설정
+    function setCookieAt00(name, value, expiredays) {
+        var todayDate = new Date();
+        todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);
+        if (todayDate > new Date()) {
+            expiredays = expiredays - 1;
+        }
+        todayDate.setDate(todayDate.getDate() + expiredays);
+        document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+    }
+
+    function eventDisablePopup(idx) {
+        setCookieAt00("brand_pop" + idx, "1", 12);
+        eventHidePopup(idx);
+    }
+
+    function eventHidePopup(idx) {
+        var obj = document.getElementById("brandPopup" + idx);
+        obj.style.display = 'none';
+    }
+
+</script>
+
+<form name="mainEventFrm" id="mainEventFrm" method="post">
+    <input type="hidden" name="popupUrl" id="popupUrl"
+        value="/main/popupList.do;jsessionid=L9VnjTxTwnhbC7zvbNYlGxDwT27frp9Lvyh2S5xXv4VhG22yqJ6m!1480072461" />
+</form>
+
+<form name="listForm" id="listForm" methd="post">
+    <input type="hidden" name="gdIdx" id="gdIdx" />
+</form>
+
+<body>
+
+
+    <div class="skipAccess">
+        <span class="none">CU 내용 바로가기 링크</span>
+        <ul>
+            <li><a href="#contents" tabindex="1">본문 바로가기</a></li>
+            <li><a href="#gnb" tabindex="1">주메뉴 바로가기</a></li>
+            <li><a href="#quick" tabindex="1">퀵메뉴 바로가기</a></li>
+        </ul>
+    </div>
+    <div class="AjaxLoading">
+        <div class="bg"></div>
+        <div class="ico"></div>
+    </div>
+
+    <div id="wrap" class="main">
+
+        <!-- only main :상단 고정 띠배너 -->
+        <div class="fixed_banner" style="display:none;">
+            <a href="#none" class="banner_active" style="background-color: #634094; color: #fff;">?? 포켓 CU 신규 가입하면 100%
+                드리는 Welcome 혜택!</a>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <button type="button" class="swipe_close"><em class="blind">close</em></button>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                </div>
+
+                <div class="swiper-modules">
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //only main :상단 고정 띠배너 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                if (getCoo("encStr") != "") {
+                    $('#user_id').val(getCoo("encStr"));
+                    // 		$('#mall').html('<a href="https://cumall.benepia.co.kr/login/ssoLogin.do?user_id='+getCoo("encStr")+'">CU몰</a>');
+                    $('#mall').html('<a href="javascript:mallMove();">CU몰</a>');
+                }
+
+            });
+
+            // function mallMove(){
+            // 	document.form.submit();
+            // }
+
+            function mallMove2() {
+                $('#benepiaForm').attr('target', '_blank');
+                $('#benepiaForm').submit();
+            }
+
+            function mallMove() {
+
+
+                window.open("http://cumall.benepia.co.kr/login/login.do");
+
+
+            }
+
+            function mallMoveTemp(userId, baseId, encId, cusrId, baseCustId, encCustId) {
+
+                // 	console.log(userId);
+                // 	console.log(baseId);
+                // 	console.log(encId);
+                // 	console.log(cusrId);
+                // 	console.log(baseCustId);
+                // 	console.log(encCustId);
+
+                var custCoCd = "00CU";
+
+                $.ajax({
+                    url: "https://auth.benepia.co.kr/api/token/request.json",
+                    dataType: "json",
+                    type: "POST",
+                    data: { encParam: encCustId, custCoCd: custCoCd },
+                    success: function (result) {
+                        $('#tknKey').val(result.responseData.tknKey);
+                        $('#user_id').val(baseCustId);
+                        $('#custCoCd').val(custCoCd);
+
+                        document.benepiaForm.submit();
+                    }
+                });
+            }
+
+            function getCoo(name) {
+                var nameOfCookie = name + "=";
+
+                var x = 0;
+                while (x <= document.cookie.length) {
+                    var y = (x + nameOfCookie.length);
+
+                    if (document.cookie.substring(x, y) == nameOfCookie) {
+                        if ((endOfCookie = document.cookie.indexOf(";", y)) == -1) {
+                            endOfCookie = document.cookie.length;
+                        }
+                        return unescape(encodeURI(encodeURIComponent(document.cookie.substring(y, endOfCookie))));
+                    }
+                    x = document.cookie.indexOf(" ", x) + 1;
+
+                    if (x == 0) {
+                        break;
+                    }
+                }
+
+                return "";
+            }
+<!--
+                        function login(){
+                            //document.location.href="https://apmember.bgfretail.com/pc/login?service="+encodeURIComponent(location.href);
+                            document.location.href="https://www.pocketcu.co.kr/login?referer_url="+encodeURIComponent(location.href);
+                        }
+                        
+                        function LoginToRedirect(url){
+                            if(url == "") url = location.href;
+                            //document.location.href="https://apmember.bgfretail.com/pc/login?service="+encodeURIComponent(url);
+                            document.location.href="https://www.pocketcu.co.kr/login?referer_url="+encodeURIComponent(location.href);
+                        }
+                        //-->
+        </script>
+
+
+
+
+        <form id="benepiaForm" name="benepiaForm" method="post" action="https://cumall.benepia.co.kr/login/ssoLogin.do">
+            <input type="hidden" name="user_id" id="user_id">
+        </form>
+
+
+
+
+
+
+        <header id="header" class="">
+            <div class="menu_util">
+                <ul>
+
+                    <li><a href="javascript:login();">로그인</a></li>
+
+
+
+                    <li><a href="https://www.pocketcu.co.kr/auth/owner" target="_blank">점주인증</a></li>
+                    <li><a href="http://owner.bgfretail.com">점주광장</a></li>
+                </ul>
+            </div>
+
+            <div class="inner_wrap">
+                <h1 class="logo">
+                    <a href="/index.do">
+                        <!-- issues/8 수정 -->
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="/m/images/common/new/logo.png">
+                            <source media="(min-width: 768px)" srcset="/images/common/new/logo.png">
+                            <img src="/images/common/new/logo.png" alt="CU">
+                        </picture>
+                    </a>
+                </h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script type="text/javascript">
+                    function goindex(page) {
+                        if (page == 'event') { location.href = "/event/index.do?category=event&depth1=1&sf=N"; return; }
+                        if (page == 'product') {/*location.href="/product/index.do?category=product&depth1=1&sf=N";*/ return; }
+                        if (page == 'service') { location.href = "/service/index.do?category=service&sf=N&depth1"; return; }
+                        if (page == 'brand_info') { location.href = "/brand_info/story.do?category=brand_info&sf=N"; return; }
+                        if (page == 'franchise') { location.href = "/franchise/index.do?category=franchise&depth1=1&sf=N"; return; }
+                        //if(page == 'membership') {location.href="https://membership.bgfretail.com/pc/mbershipInfo"; return;}
+                        if (page == 'membership') { location.href = "/membership/mbership_info.do?category=membership_info&depth2=1"; return; }
+                        if (page == 'membership_info') { location.href = "/membership/mbership_info.do?category=membership_info&depth2=1"; return; }
+                    }
+
+                    $(document).ready(function () {
+                        $.ajax({
+                            type: "post",
+                            url: "/monthMenuViewYn.do",
+                            dataType: 'json',
+                            success: function (data) {
+                                var EventTab = $('.eventTab');
+
+                                if (data.status == 'Y') {
+                                    var tophtml = '<li id="monthmenutop"><a href="/event/month.do?category=event&depth2=6&sf=N">이달의 행사</a></li>';
+                                    $('#monthmenutop').html(tophtml);
+                                }
+                            },
+                            error: function (data) {
+                                //alert('퀵 내용을 가져 오던 중 오류가 발생하였습니다.');
+                            }
+                        });
+                    });
+                </script>
+
+                <!-- 1depth 메뉴별 클릭시 class="on" 추가 -->
+                <!-- gnb -->
+
+                <nav class="gnb" id="gnb_swiper">
+                    <div class="swiper-container depth">
+                        <ul class="swiper-wrapper">
+                            <li class=" swiper-slide">
+                                <a href="/brand_info/story.do?category=brand_info&sf=N">CU소개</a>
+                                <ul class="sub_depth">
+                                    <li><a href="/brand_info/story.do?category=brand_info&sf=N">브랜드 스토리</a></li>
+                                    <li><a href="/brand_info/digital_journal.do?category=brand_info&depth2=4&sf=N">디지털
+                                            사보</a></li>
+                                    <li><a
+                                            href="/brand_info/photo_winner.do?category=brand_info&depth2=3&sf=N&year=2022">CU
+                                            갤러리</a></li>
+
+                                </ul>
+                            </li>
+                            <li class=" swiper-slide">
+                                <a href="/product/product.do?category=product&depth2=4&sf=N">상품&#183;서비스</a>
+                                <ul class="sub_depth">
+                                    <li><a href="/product/product.do?category=product&depth2=4&sf=N">전체 상품</a></li>
+                                    <li><a href="/product/pb.do?category=product&depth2=1&sf=N">CU 차별화 상품</a></li>
+                                    <li><a href="/event/plus.do?category=event&depth2=1&sf=N">행사상품</a></li>
+
+                                    <li><a href="/service/parcel_info.do?category=service&depth3=4&sf=N">생활편의 서비스</a>
+                                    </li>
+                                    <li><a href="/service/credit_info.do?category=service&depth2=2&sf=N">제휴카드</a></li>
+                                </ul>
+                            </li>
+                            <li class=" swiper-slide">
+                                <a href="/store/list.do?category=store">매장안내</a>
+                            </li>
+                            <li class=" swiper-slide">
+                                <a href="/membership/mbership_info.do?category=membership_info&depth2=1">멤버십</a>
+                                <ul class="sub_depth">
+                                    <li><a href="/membership/mbership_info.do?category=membership_info&depth2=1">멤버십
+                                            소개</a></li>
+
+
+                                    <li><a href="https://pocketcu.co.kr" target="_blank">포켓 CU</a></li>
+
+                                </ul>
+                            </li>
+                            <li class=" swiper-slide">
+                                <a href="/franchise/index.do?category=franchise&depth1=1&sf=N">창업&#183;상생</a>
+                                <ul class="sub_depth">
+                                    <li><a href="/franchise/understand_01.do?category=franchise&depth2=1&depth3=1&sf=N">사업의
+                                            이해</a></li>
+                                    <li><a
+                                            href="/franchise/guide_05.do?category=franchise&depth2=7&depth3=1&sf=N">가맹조건</a>
+                                    </li>
+                                    <li><a
+                                            href="/franchise/presentation_area.do?category=franchise&depth2=3&depth3=1&sf=N">창업
+                                            설명회</a></li>
+                                    <li><a href="/franchise/successList.do?category=franchise&depth2=5&depth3=1&sf=N">창업
+                                            성공기</a></li>
+                                    <li><a
+                                            href="/franchise/store_01_list.do?category=franchise&depth2=6&depth3=1&sf=N">점포물건</a>
+                                    </li>
+                                    <li><a href="/benefit/index.do?category=benefit&sf=N">상생혜택</a></li>
+                                    <li class="pc_none"><a href="/enter/info_01.do?category=enter&sf=N">거래상담</a></li>
+                                    <!-- issues/2153 수정 -->
+                                </ul>
+                            </li>
+                            <!-- issues/2153 추가 -->
+                            <li class="swiper-slide mobile_none">
+                                <a href="/consult/consult01.do">입점상담</a>
+                                <div class="sub_depth">
+                                    <ul>
+                                        <li><a href="/consult/consult01.do">입점 프로세스</a></li>
+                                        <li><a href="/consult/consult02.do">기준 안내</a></li>
+                                        <li><a href="/consult/consult03.do">입점 상담 신청</a></li>
+                                        <li><a href="https://www.bgf.co.kr/esg/winwin/vision/" target="_blank">동반 성장</a>
+                                        </li> <!-- issues/2153#note_92253 수정 -->
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- //issues/2153 추가 -->
+                            <li class=" swiper-slide">
+                                <a href="/brand_info/news_list.do?category=brand_info&depth2=5&sf=N">새로운소식</a>
+                                <ul class="sub_depth">
+                                    <li><a href="/brand_info/news_list.do?category=brand_info&depth2=5&sf=N">CU소식</a>
+                                    </li>
+
+                                    <li><a href="/idea/idea_list.do">이거어때</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- 다국어 메뉴 -->
+                <div class="menu_lang">
+                    <a href="#" class="status">KR</a>
+                    <ul>
+                        <li class="on"><a href="/">KR</a></li>
+                        <li><a href="/en/index.do">EN</a></li>
+                        <li><a href="/ch/index.do">CN</a></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="toggle_menu"><img src="/images/common/new/btn_menu_ico.png" alt="메뉴"></a>
+                <!-- menu button -->
+
+                <!-- toggle menu -->
+                <div class="menu_wrap">
+                    <div class="top_btn_wrap">
+                        <div class="member pc_none">
+
+
+
+                            <a href="javascript:login()" class="btn_login"><em class="txt">로그인</em></a>
+
+
+                        </div>
+                        <a href="#" class="toggle_close">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/common/new/btn_gnb_close.png"
+                                    width="20">
+                                <source media="(min-width: 768px)" srcset="/images/common/new/btn_gnb_close.png">
+                                <img src="/images/common/new/btn_gnb_close.png alt=" 메뉴 닫기>
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="inner_wrap">
+                        <div class="gnb_wrap">
+                            <!-- gnb menu -->
+                            <nav class="gnb_menu">
+                                <ul class="category">
+                                    <li>
+                                        <a href="#none" class="menu_depth1">CU소개</a>
+                                        <div class="sub_depth">
+                                            <ul>
+                                                <li><a href="/brand_info/story.do?category=brand_info&sf=N">브랜드 스토리</a>
+                                                </li>
+                                                <li><a
+                                                        href="/brand_info/digital_journal.do?category=brand_info&depth2=4&sf=N">디지털
+                                                        사보</a></li>
+                                                <li><a
+                                                        href="/brand_info/photo_winner.do?category=brand_info&depth2=3&sf=N&year=2022">CU
+                                                        갤러리</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="menu_depth1">상품&#183;서비스</a>
+                                        <div class="sub_depth">
+                                            <ul>
+                                                <li><a href="/product/product.do?category=product&depth2=4&sf=N">전체
+                                                        상품</a></li>
+                                                <li><a href="/product/pb.do?category=product&depth2=1&sf=N">CU 차별화
+                                                        상품</a></li>
+                                                <li><a href="/event/plus.do?category=event&depth2=1&sf=N">행사상품</a></li>
+
+                                                <li><a href="/service/parcel_info.do?category=service&depth3=4&sf=N">생활편의
+                                                        서비스</a></li>
+                                                <li><a
+                                                        href="/service/credit_info.do?category=service&depth2=2&sf=N">제휴카드</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="/store/list.do?category=store" class="menu_depth1">매장안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="/membership/mbership_info.do?category=membership_info&depth2=1"
+                                            class="menu_depth1">멤버십</a>
+                                        <div class="sub_depth">
+                                            <ul>
+                                                <li><a href="/membership/mbership_info.do?category=membership_info&depth2=1"
+                                                        target="_blank">멤버십 소개</a></li>
+                                                <li><a href="https://www.pocketcu.co.kr" target="_blank">포켓 CU</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="menu_depth1">창업&#183;상생</a>
+                                        <div class="sub_depth">
+                                            <ul>
+                                                <li><a
+                                                        href="/franchise/understand_01.do?category=franchise&depth2=1&depth3=1&sf=N">사업의
+                                                        이해</a></li>
+                                                <li><a
+                                                        href="/franchise/guide_05.do?category=franchise&depth2=7&depth3=1&sf=N">가맹조건</a>
+                                                </li>
+                                                <li><a
+                                                        href="/franchise/presentation_area.do?category=franchise&depth2=3&depth3=1&sf=N">창업
+                                                        설명회</a></li>
+                                                <li><a
+                                                        href="/franchise/successList.do?category=franchise&depth2=5&depth3=1&sf=N">창업
+                                                        성공기</a></li>
+                                                <li><a
+                                                        href="/franchise/store_01_list.do?category=franchise&depth2=6&depth3=1&sf=N">점포물건</a>
+                                                </li>
+                                                <li><a href="/benefit/index.do?category=benefit&sf=N">상생혜택</a></li>
+                                                <li class="pc_none"><a
+                                                        href="/enter/info_01.do?category=enter&sf=N">거래상담</a></li>
+                                                <!-- issues/2153 수정 -->
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- issues/2153 추가 -->
+                                    <li class="mobile_none">
+                                        <a href="#none" class="menu_depth1">입점상담</a>
+                                        <div class="sub_depth">
+                                            <ul>
+                                                <li><a href="/consult/consult01.do">입점 프로세스</a></li>
+                                                <li><a href="/consult/consult02.do">기준 안내</a></li>
+                                                <li><a href="/consult/consult03.do">입점 상담 신청</a></li>
+                                                <li><a href="https://www.bgf.co.kr/esg/winwin/vision/"
+                                                        target="_blank">동반 성장</a></li>
+                                                <!-- issues/2153#note_92253 수정 -->
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- //issues/2153 추가 -->
+                                    <li>
+                                        <a href="#none" class="menu_depth1">새로운소식</a>
+                                        <div class="sub_depth">
+                                            <ul>
+                                                <li><a
+                                                        href="/brand_info/news_list.do?category=brand_info&depth2=5&sf=N">CU소식</a>
+                                                </li>
+
+                                                <li><a href="/idea/idea_list.do">이거어때</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="common_menu">
+                                <div class="member">
+
+                                    <a href="javascript:login();" class="btn_login"><em class="txt">로그인</em></a>
+
+
+
+                                    <a href="https://www.pocketcu.co.kr/login?service=http://cu.bgfretail.com"
+                                        class="btn_join"><em class="txt">회원가입</em></a>
+
+                                </div>
+
+                                <ul class="site_link">
+                                    <li><a href="http://owner.bgfretail.com" class="type1"
+                                            target="_blank"><em>점주광장</em></a></li>
+                                    <li><a href="https://www.pocketcu.co.kr/auth/owner" class="type2"
+                                            target="_blank"><em>점주인증</em></a></li>
+                                    <li><a href="https://www.pocketcu.co.kr/auth/emp" class="type3"
+                                            target="_blank"><em>임직원인증</em></a></li>
+                                </ul>
+
+                                <div class="link_wrap pc_none">
+                                    <a href="/store/list.do;jsessionid=L9VnjTxTwnhbC7zvbNYlGxDwT27frp9Lvyh2S5xXv4VhG22yqJ6m!1480072461?category=store"
+                                        class="store_link">
+                                        <div class="info_wrap">
+                                            매장안내
+                                        </div>
+                                    </a>
+                                    <a href="https://cs.bgfretail.com/index.jsp" class="customer_link" target="_blank">
+                                        <div class="info_wrap">
+                                            고객센터
+                                            <p class="txt">
+                                                1577-8007 <br />
+                                                평일 09시:00 - 21:00
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="https://cs.bgfretail.com/index.jsp" class="customer_link mobile_none"
+                                    target="_blank">
+                                    <span class="txt">고객센터</span>
+                                    <img src="/images/common/new/img_customer.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </header>
+
+
+
+
+
+
+
+
+
+
+        <!-- CU 스토리 보기 -->
+        <section class="visual_area cont_article">
+            <h2 class="hidden_text">CU 스토리보기</h2>
+            <div class="inner_wrap">
+                <div class="obj ly_flex">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="/m/images/main/new/main_visual_logo_text_mo.png">
+                        <source media="(min-width: 768px)" srcset="/images/main/new/main_visual_logo_text_pc.png">
+                        <img class="text_img" src="/images/main/new/main_visual_logo_text_pc.png"
+                            alt="hello ,friends text images">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="/m/images/main/new/main_visual_illu_mo.png?ver=1">
+                        <source media="(min-width: 768px)" srcset="/images/main/new/main_visual_illu.png?ver=1">
+                        <img class="cu_character" src="/images/main/new/main_visual_illu.png?ver=1" alt="cu character">
+                    </picture>
+                </div>
+
+                <div class="view_more">
+                    <a href="/brand_info/story.do?category=brand_info&sf=N" class="link_more" title="cu스토리보기">
+                        <p class="link_text">cu 스토리 보기</p><span class="icon_circle"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 이벤트 영역 -->
+        <section class="event_banner cont_article">
+            <h2 class="title hidden_text">CU 진행중인 이벤트</h2>
+            <div class="inner_wrap">
+                <!-- Slider main container -->
+                <div class="swiper main_swipe">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=863"
+                                title="1월 행사 모아보기" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/E6B8B2058CC84DDFA9C1F3D67697141B.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/ED280930CA074FF6B91053FE98C2D009.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/ED280930CA074FF6B91053FE98C2D009.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=864"
+                                title="새해 CU에 오면 특별한 행운이 시작!" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/FC7AB198E57349D89549CA961F8CB188.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/090A7B8B483B4C8CBA9533BC3331077E.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/090A7B8B483B4C8CBA9533BC3331077E.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=865"
+                                title="신년운세 확인하고 새해福 많이 받으세요!" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/2B1B1B0A5A164D70B88FE3F38DCC9C00.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/E88EFC5D894743968707E84A35EBECF4.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/E88EFC5D894743968707E84A35EBECF4.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=866"
+                                title="23% 할인 구독 혜택에 에어팟 프로까지!" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/5EE24DD0B9C64FC99D1B8715DF656125.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/E652248C53FB490A978B5A02A3EEDA97.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/E652248C53FB490A978B5A02A3EEDA97.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=867"
+                                title="매일 7시~9시는 CU 친구타임!" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/42178E4CF5CC4B9BB90CEF9C3B995C1A.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/2A9DDF31A9C64412A815E49972397BF1.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/2A9DDF31A9C64412A815E49972397BF1.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=868"
+                                title="1월 신규가입 이벤트" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/67C8F6ECFCBF4B66BA4203272B0D0EB8.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/58AC2A2DD4E64ADAB95DAB62B2C1E145.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/58AC2A2DD4E64ADAB95DAB62B2C1E145.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=869"
+                                title="1월 출석룰렛 이벤트" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/B0975FF4AACC48FE9DB1546B6C52D700.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/BE185406F8D64C6C984449D255CEF55D.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/BE185406F8D64C6C984449D255CEF55D.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=870"
+                                title="내 생애 첫 키핑 시 할인쿠폰 증정!" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/2F28C09438134DC2BED2A8F099C9DBF5.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/6ABC83021D064AD6B7584847272148C3.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/6ABC83021D064AD6B7584847272148C3.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=871"
+                                title="편PICK 3천원 할인 이벤트" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/DAB74B87D675471D81216A70FE9049ED.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/6CE8E3AD21A44F26B7C4AC11698DB741.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/6CE8E3AD21A44F26B7C4AC11698DB741.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=872"
+                                title="토끼처럼 부지런한 당신에게 get커피를!" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/E6F2C1A068054F40B38AB01CD0156A65.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/50A966B716FA4D8D871765D59DADEE5C.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/50A966B716FA4D8D871765D59DADEE5C.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="https://cu.bgfretail.com/brand_info/news_view.do?category=brand_info&depth2=5&idx=873"
+                                title="친구 초대하고 1년 쿠폰팩 받자!" target="">
+                                <!-- 이미지 링크 변경 필요 -->
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/6BF628F954584C32B4D6B665696EE044.jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/BD7347D7BCB7455EAF8C31CAD329BCB0.jpg">
+                                    <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/BD7347D7BCB7455EAF8C31CAD329BCB0.jpg"
+                                        alt="관리자 등록 이미지">
+                                </picture>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev circle-swiper-button swiper-button"></div>
+                <div class="swiper-button-next circle-swiper-button swiper-button"></div>
+            </div>
+
+            <!-- pagination -->
+            <div class="pagination_button">
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </section>
+
+        <!-- 핫이슈 --> <!-- 관리자연동 -->
+        <section class="hot_issue cont_article">
+            <h2 class="title title_floating">핫이슈</h2>
+            <div class="view_more">
+                <a class="link_more" href="/product/product.do?category=product&depth2=4&sf=N" title="핫이슈 상품 모두보기">
+                    <p class="link_text"><span class="mobile_none">핫이슈 상품&nbsp;</span>모두보기</p><span
+                        class="icon_arrow"></span>
+                </a>
+            </div>
+            <div class="inner_wrap">
+                <!-- Slider main container -->
+                <div class="swiper hotIssue_swipe">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- set --><!-- Slides -->
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(17011);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801073312845.jpg"
+                                            alt="8801073312845.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>삼양)바질크림불닭우동</p>
+                                        </div>
+                                        <div class="price"><strong>3,600</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(17007);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801068409116.jpg"
+                                            alt="8801068409116.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>삼립)포켓몬초코브라우니</p>
+                                        </div>
+                                        <div class="price"><strong>3,900</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(16992);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8809802266988.jpg"
+                                            alt="8809802266988.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>김)채식채란마요유부</p>
+                                        </div>
+                                        <div class="price"><strong>4,200</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(16973);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8809453267075.jpg"
+                                            alt="8809453267075.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>햄)탱탱슈림프버거</p>
+                                        </div>
+                                        <div class="price"><strong>3,500</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(16958);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8809813750346.jpg"
+                                            alt="8809813750346.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>더본)백종원고기짬뽕컵</p>
+                                        </div>
+                                        <div class="price"><strong>1,900</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(16833);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801121287378.jpg"
+                                            alt="8801121287378.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>유라가)황치즈맛찰떡꼬치</p>
+                                        </div>
+                                        <div class="price"><strong>3,400</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(16760);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801753110037.jpg"
+                                            alt="8801753110037.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>연세)황치즈생크림빵</p>
+                                        </div>
+                                        <div class="price"><strong>3,300</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(16718);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8809453266993.jpg"
+                                            alt="8809453266993.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>도)백종원더블치즈함박</p>
+                                        </div>
+                                        <div class="price"><strong>6,500</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(16658);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8809692953760.jpg"
+                                            alt="8809692953760.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>고대)1905사과잼페스츄리</p>
+                                        </div>
+                                        <div class="price"><strong>3,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+                                    <span class="new"><img src="../images/icon/tag_new.png" alt="New"></span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list"><!-- 상품에 사용 .prod_list -->
+                            <a class="prod_item" href="javascript:view(16627);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8809453266917.jpg"
+                                            alt="8809453266917.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>도)토끼정카레가츠정식</p>
+                                        </div>
+                                        <div class="price"><strong>5,900</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tag"> <!-- [D] .tag > span .new : new /  .best : best -->
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- // set -->
+                    </div>
+                </div>
+
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev swiper-button swiper-button"></div>
+                <div class="swiper-button-next swiper-button swiper-button"></div>
+            </div>
+
+            <!-- pagination -->
+            <div class="pagination_button">
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- 포켓CU 다운받기 -->
+        <section class="app_go cont_article">
+            <h2 class="title hidden_text">포켓CU 다운받기 </h2>
+            <div class="inner_wrap">
+                <div class="ly_flex">
+                    <div class="text_box">
+                        <p class="title_p">차별화된 서비스와 <br class="pc_none">풍성한 혜택이 가득! </p>
+                        <p class="sub_p">포켓CU APP 사용해보세요 :)</p>
+                    </div>
+                    <div class="obj">
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="/m/images/main/new/app_go_object_img_mo.png?ver=1">
+                            <source media="(min-width: 768px)"
+                                srcset="/images/main/new/app_go_object_img01_pc.png?ver=1">
+                            <img src="/images/main/new/app_go_object_img01_pc.png?ver=1" alt="포켓cuAPP mockup image">
+                        </picture>
+
+
+                    </div>
+                </div>
+
+                <div class="link_area">
+
+                    <a href="https://pocketcu.co.kr" class="btn_go" target="_blank" title="포켓CU 다운받기">포켓CU 설치 <span
+                            class="icon_down"></span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- +1 증정 상품 --> <!-- 관리자연동 -->
+        <section class="plus_goods cont_article">
+            <h2 class="title title_floating">+1 증정 상품</h2>
+            <div class="view_more">
+                <a href="/event/plus.do?category=event&depth2=1&sf=N" class="link_more">
+                    <p class="link_text"><span class="mobile_none">증정상품&nbsp;</span>모두보기</p><span
+                        class="icon_arrow"></span>
+                </a>
+            </div>
+            <div class="inner_wrap">
+                <!-- Slider main container -->
+                <div class="swiper plus_swipe">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(672);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801047161592.jpg"
+                                            alt="8801047161592.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>동원)양반호박죽</p>
+                                        </div>
+                                        <div class="price"><strong>4,500</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(877);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8806002010861.jpg"
+                                            alt="8806002010861.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>광동)헛개파워병</p>
+                                        </div>
+                                        <div class="price"><strong>5,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1175);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801051009033.jpg"
+                                            alt="8801051009033.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>46cm)초극세모칫솔</p>
+                                        </div>
+                                        <div class="price"><strong>3,500</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1189);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8806403146473.jpg"
+                                            alt="8806403146473.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>메디안)치석케어치약</p>
+                                        </div>
+                                        <div class="price"><strong>4,500</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1190);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801042443631.jpg"
+                                            alt="8801042443631.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>메디안)센서티브칫솔</p>
+                                        </div>
+                                        <div class="price"><strong>3,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1197);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801046057216.jpg"
+                                            alt="8801046057216.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>2080)칫솔</p>
+                                        </div>
+                                        <div class="price"><strong>2,800</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1211);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801046846087.jpg"
+                                            alt="8801046846087.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>2080)치약</p>
+                                        </div>
+                                        <div class="price"><strong>4,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1234);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801046860458.jpg"
+                                            alt="8801046860458.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>2080)센서티브미세모</p>
+                                        </div>
+                                        <div class="price"><strong>3,200</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1262);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801051064223.jpg"
+                                            alt="8801051064223.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>페리오)토탈7치약</p>
+                                        </div>
+                                        <div class="price"><strong>4,300</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1263);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801051010367.jpg"
+                                            alt="8801051010367.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>페리오)이지클리닉칫솔</p>
+                                        </div>
+                                        <div class="price"><strong>2,200</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1750);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8806403068379.jpg"
+                                            alt="8806403068379.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>미쟝센)데미지샴푸</p>
+                                        </div>
+                                        <div class="price"><strong>15,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1751);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8806403068409.jpg"
+                                            alt="8806403068409.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>미쟝센)데미지린스</p>
+                                        </div>
+                                        <div class="price"><strong>15,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1943);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801051154139.jpg"
+                                            alt="8801051154139.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>오가니스트)샴푸200ml</p>
+                                        </div>
+                                        <div class="price"><strong>7,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(1944);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801051158496.jpg"
+                                            alt="8801051158496.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>오가니스트)린스200ml</p>
+                                        </div>
+                                        <div class="price"><strong>7,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(2513);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801051057577.jpg"
+                                            alt="8801051057577.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>46cm)쿨민트치약</p>
+                                        </div>
+                                        <div class="price"><strong>3,900</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(3074);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801441013879.jpg"
+                                            alt="8801441013879.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>크리오)뉴미세모칫솔</p>
+                                        </div>
+                                        <div class="price"><strong>2,000</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(3075);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801441013862.jpg"
+                                            alt="8801441013862.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>크리오)뉴일반모칫솔</p>
+                                        </div>
+                                        <div class="price"><strong>1,800</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(3309);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="http://cdn2.bgfretail.com/bgfbrand/files/product/D3BFF641B34E40BB92FBC7612F4C8D7B.jpg"
+                                            alt="D3BFF641B34E40BB92FBC7612F4C8D7B.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>오랄비)초미세모칫솔</p>
+                                        </div>
+                                        <div class="price"><strong>2,900</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(3332);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/6925425474653.jpg"
+                                            alt="6925425474653.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>농심)츄파춥스게코젤리</p>
+                                        </div>
+                                        <div class="price"><strong>1,800</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide prod_list">
+                            <a class="prod_item" href="javascript:view(3474);">
+                                <div class="prod_wrap">
+                                    <div class="prod_img">
+                                        <img src="//tqklhszfkvzk6518638.cdn.ntruss.com/product/8801073210967.jpg"
+                                            alt="8801073210967.jpg" class="prod_img">
+                                    </div>
+                                    <div class="prod_text">
+                                        <div class="name">
+                                            <p>삼양)치즈불닭볶음면컵</p>
+                                        </div>
+                                        <div class="price"><strong>1,800</strong><span class="won">원</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="badge"> <!-- [D] .badge > span .plus2 : 2+1 / .plus1 : 1+1 -->
+
+
+                                    <span class="plus1">1+1</span>
+
+
+
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--  pagination -->
+            <div class="pagination_button">
+                <div class="swiper_button_mix">
+                    <div class="swiper-pagination"></div>
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev swiper-button"></div>
+                    <div class="swiper-button-next swiper-button"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 지금 나에게 필요한건? -->
+        <section class="now_need">
+            <div class="inner_wrap">
+                <div class="cont_left">
+                    <h2 class="title">지금 나에게 필요한건?</h2>
+                    <p class="txt">CU의 다양한 상품들을 소개합니다!</p>
+                    <div class="cont_wrap mobile_none">
+                        <div class="search_wrap">
+                            <input type="text" id="search_prd" class="input_search" placeholder="연세우유 크림빵을 검색해보세요!" />
+                            <a href="javascript:search();" class="btn_search"><i class="hidden_i">검색</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_right">
+                    <div class="category_wrap">
+                        <a href="/product/product.do?category=product&depth2=4&depth3=1" class="cate01 big_ver">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/ico_need_cate01.png"
+                                    width="36">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/ico_need_cate01.png">
+                                <img src="/images/main/new/ico_need_cate01.png" alt="간편식사">
+                            </picture>
+                            <span class="cate_name">간편식사</span>
+                        </a>
+                        <a href="/product/product.do?category=product&depth2=4&depth3=2" class="cate02 big_ver">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/ico_need_cate02.png"
+                                    width="30">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/ico_need_cate02.png">
+                                <img src="/images/main/new/ico_need_cate02.png" alt="즉석조리">
+                            </picture>
+                            <span class="cate_name font_black">즉석조리</span>
+                        </a>
+                        <a href="/product/product.do?category=product&depth2=4&depth3=3" class="cate03 small_ver">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/ico_need_cate03.png"
+                                    width="22">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/ico_need_cate03.png">
+                                <img src="/images/main/new/ico_need_cate03.png" alt="스낵">
+                            </picture>
+                            <span class="cate_name">스낵</span>
+                        </a>
+                        <a href="/product/product.do?category=product&depth2=4&depth3=4" class="cate04 small_ver">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/ico_need_cate04.png"
+                                    width="25">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/ico_need_cate04.png">
+                                <img src="/images/main/new/ico_need_cate04.png" alt="아이스크림">
+                            </picture>
+                            <span class="cate_name font_black">아이스크림</span>
+                        </a>
+                        <a href="/product/product.do?category=product&depth2=4&depth3=5" class="cate05 small_ver">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/ico_need_cate05.png"
+                                    width="25">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/ico_need_cate05.png">
+                                <img src="/images/main/new/ico_need_cate05.png" alt="식품">
+                            </picture>
+                            <span class="cate_name">식품</span>
+                        </a>
+                        <a href="/product/product.do?category=product&depth2=4&depth3=6" class="cate06 small_ver">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/ico_need_cate06.png"
+                                    width="23">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/ico_need_cate06.png">
+                                <img src="/images/main/new/ico_need_cate06.png" alt="음료">
+                            </picture>
+                            <span class="cate_name">음료</span>
+                        </a>
+                        <a href="/product/product.do?category=product&depth2=4&depth3=7" class="cate07 big_ver">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/ico_need_cate07.png"
+                                    width="29">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/ico_need_cate07.png">
+                                <img src="/images/main/new/ico_need_cate07.png" alt="생활용품">
+                            </picture>
+                            <span class="cate_name">생활용품</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info_banner">
+            <div class="cont_wrap">
+                <a href="franchise/index.do?category=franchise&depth1=1&sf=N" class="franchise_bnr">
+                    <h2 class="title">창업안내</h2>
+                    <p class="txt">점주님들의 성공을 <br />최우선으로 생각하는</p>
+                    <span class="arrow"><i class="hidden_i">더보기</i></span>
+                </a>
+            </div>
+
+            <div class="cont_wrap">
+                <a href="https://cs.bgfretail.com/index.jsp" target="_blank" class="cs_bnr">
+                    <h2 class="title">고객센터</h2>
+                    <p class="txt">상품문의, 창업상담 무엇을 <br />도와드릴까요?</p>
+                    <span class="arrow"><i class="hidden_i">더보기</i></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 우리동네 CU -->
+        <section class="search_cu">
+            <div class="inner_wrap">
+                <div class="cont_left">
+                    <h2 class="title">우리동네<em class="ico_cu"><i class="hidden_i">CU</i></em>어디있지?</h2>
+                    <p class="txt">근처에 있는 CU를 찾아보세요!</p>
+                    <div class="cont_wrap">
+                        <div class="search_wrap">
+                            <input type="text" id="search_cu" class="input_search" placeholder="점포명 또는 OO동을 입력해보세요." />
+                            <a href="javascript:storeSearch();" class="btn_search"><i class="hidden_i">검색</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_right img_wrap">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="/m/images/main/new/img_cu_store.png">
+                        <source media="(min-width: 768px)" srcset="/images/main/new/img_cu_store.png">
+                        <img src="/images/main/new/img_cu_store.png" alt="cu점포이미지">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="story_cu">
+            <div class="cont_wrap">
+                <h2 class="title">스토리</h2>
+                <!-- 성공스토리 --> <!-- 관리자연동 -->
+
+
+                <div class="story_column">
+                    <a href="/franchise/successView.do?category=franchise&depth2=5&idx=62" target="">
+                        <!-- 이미지 링크 변경 필요 -->
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="https://cdn2.bgfretail.com">
+                            <source media="(min-width: 768px)"
+                                srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/pc_story_02_220228_1613.png">
+                            <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/pc_story_02_220228_1613.png"
+                                alt="성공스토리">
+                        </picture>
+                    </a>
+                    <h3 class="title">성공스토리<em class="story_ico1"><i class="hidden_i">CU</i></em></h3>
+                    <p class="tit_txt">넓어진 공간만큼 고객의 발길을 사로잡다.<br> 서초법원로점 박준형 점주님입니다.</p>
+                </div>
+
+
+                <div class="story_column">
+                    <a href="https://www.bgflive.com" target="_blank">
+                        <!-- 이미지 링크 변경 필요 -->
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="https://cdn2.bgfretail.com">
+                            <source media="(min-width: 768px)"
+                                srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/462EF97C95034F11A7125E0441E16755.png">
+                            <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/462EF97C95034F11A7125E0441E16755.png"
+                                alt="BGF Live">
+                        </picture>
+                    </a>
+                    <h3 class="title">BGF Live<em class="story_ico2"><i class="hidden_i">CU</i></em></h3>
+                    <p class="tit_txt">BGF Live에서<BR>CU 최신 소식을 알아보세요</p>
+                </div>
+
+
+                <div class="story_column">
+                    <a href="https://www.instagram.com/p/CnRAXZPN-AT/" target="_blank">
+                        <!-- 이미지 링크 변경 필요 -->
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/76BB59A7DE49467BA8F92E167A37DA08.png">
+                            <source media="(min-width: 768px)"
+                                srcset="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/02CA57CAB18C437380CEECB6E46527D2.png">
+                            <img src="https://cdn2.bgfretail.com/bgfbrand/files/newmainImage/02CA57CAB18C437380CEECB6E46527D2.png"
+                                alt="Instagram">
+                        </picture>
+                    </a>
+                    <h3 class="title">Instagram<em class="story_ico3"><i class="hidden_i">CU</i></em></h3>
+                    <p class="tit_txt">백종원 대표의 노하우를 담은
+
+                        칼칼한 고기짬뽕🍜
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CU 매장 --> <!-- 스크롤 시, 영역 및 텍스트가 고정되고 이미지만 변경 되는 인터렉션 적용, 최대 3개 노출 가능 -->
+        <section class="cu_store">
+            <!-- Slider main container -->
+            <div class="swiper cu_store_swipe">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#none">
+                            <h3 class="title">고객과 사회에 좋은 친구, <br> BGF리테일의 편의점 브랜드 <br>CU입니다.</h3>
+
+                            <picture> <!-- issues/1974 이미지 수정 -->
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/cu_storebg_202207_03.png">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/cu_storebg_202207_03.png">
+                                <img src="/images/main/new/cu_storebg_202207_03.png" alt="관리자 등록 이미지">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none">
+                            <h3 class="title">고객과 사회에 좋은 친구, <br> BGF리테일의 편의점 브랜드 <br>CU입니다.</h3>
+
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/cu_storebg_202203_01.jpg">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/cu_storebg_202203_01.jpg">
+                                <img src="/images/main/new/cu_storebg_202203_01.jpg" alt="관리자 등록 이미지">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none">
+                            <h3 class="title">고객과 사회에 좋은 친구, <br> BGF리테일의 편의점 브랜드 <br>CU입니다.</h3>
+
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/cu_storebg_202203_02.jpg">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/cu_storebg_202203_02.jpg">
+                                <img src="/images/main/new/cu_storebg_202203_02.jpg" alt="관리자 등록 이미지">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none">
+                            <h3 class="title">고객과 사회에 좋은 친구, <br> BGF리테일의 편의점 브랜드 <br>CU입니다.</h3>
+
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="/m/images/main/new/cu_storebg_202203_03.jpg">
+                                <source media="(min-width: 768px)" srcset="/images/main/new/cu_storebg_202203_03.jpg">
+                                <img src="/images/main/new/cu_storebg_202203_03.jpg" alt="관리자 등록 이미지">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </div>
+
+    <style>
+        /* popup 181207 추가 */
+
+        .openpopup_wrapper {
+
+            position: absolute;
+
+            left: 50%;
+
+            transform: translateX(-120%);
+
+            top: 141px;
+
+            z-index: 999;
+
+            background-color: #791a90;
+
+            padding: 3px 4px 0;
+
+        }
+
+        .openpopup_wrapper .openpopup_footer {
+
+            height: 29px;
+
+            position: relative;
+
+            margin: 0 15px;
+
+        }
+
+        .openpopup_wrapper .openpopup_footer label {
+
+            cursor: pointer;
+
+            display: inline-block;
+
+            overflow: hidden;
+
+            color: #fff;
+
+            height: 29px;
+
+            line-height: 29px;
+
+        }
+
+        .openpopup_wrapper .openpopup_footer label input {
+
+            vertical-align: middle;
+
+            position: relative;
+
+            top: 9px;
+
+            float: left;
+
+            margin-right: 5px;
+
+        }
+
+        .openpopup_wrapper .openpopup_footer label img {
+
+            display: block;
+
+            float: left;
+
+            padding-right: 4px;
+
+        }
+
+        .openpopup_wrapper .openpopup_footer .Btnclose {
+
+            position: absolute;
+
+            right: -15px;
+
+            top: 0
+        }
+
+        /* issues/2589 수정 */
+
+        .openpopup_wrapper+.openpopup_wrapper {
+
+            transform: translateX(-50px);
+
+        }
+
+        .openpopup_wrapper .mov_wrp {
+
+            position: absolute;
+
+            top: 26%;
+
+            left: 4%;
+
+            width: 92%;
+
+        }
+
+        .openpopup_wrapper .mov_wrp .mov_area {
+
+            position: relative;
+
+            width: 100%;
+
+            height: 0;
+
+            overflow: hidden;
+
+            padding-bottom: 67.26%;
+
+            box-shadow: 0px 6px 10px 3px rgba(42, 42, 42, 0.5);
+
+        }
+
+        .openpopup_wrapper .mov_wrp .mov_area iframe {
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+        }
+
+        /* issues/2266 - 2022-08-31 */
+        .popup_layer.openpopup_wrapper {
+            position: absolute;
+            left: 20px;
+            transform: none;
+            top: 30px;
+            z-index: 999;
+            background-color: #3c3c3c;
+            padding: 3px 4px 0;
+        }
+
+        /* issues/2589_ver2 수정 */
+        .pc_ver .popup_layer.openpopup_wrapper .openpopup_content img {
+            width: 400px;
+        }
+
+        .mobile_ver .popup_layer.openpopup_wrapper .openpopup_content {
+            width: 280px;
+        }
+
+        .mobile_ver .popup_layer.openpopup_wrapper .openpopup_content img {
+            width: 100%;
+        }
+    </style>
+
+    <!-- popup 2022-10-31  -->
+    <div id="popup221031" class="openpopup_wrapper popup_layer" style="display:none;">
+        <div class="openpopup_content">
+            <picture>
+                <source media="(max-width: 767px)" srcset="/m/images/popup/mo_popup_221031.jpg">
+                <source media="(min-width: 768px)" srcset="/images/popup/popup_221031.jpg">
+                <img src="/images/popup/popup_221031.jpg"
+                    alt="이태원 참사로 인해 안타깝게 희생되신 분들의 삼가 명복을 기원하며, 사랑하는 이를 잃은 유가족분들께도 온 마음으로 애도를 전합니다.">
+            </picture>
+        </div>
+        <div class="openpopup_footer">
+            <label>
+                다시 열지 않기<input id="notToday_popup221031" class="notToday" type="checkbox">
+            </label>
+            <a id="close_popup221031" class="Btnclose" href="#"><img alt="닫기" src="/images/popup/btn_close_180703.jpg"
+                    width="29px"></a>
+        </div>
+    </div>
+    <!--// popup 2022-10-31 -->
+
+    <!-- popup 2022-10-24 -->
+
+    <!--// popup 2022-10-24-->
+
+    <!-- popup 2022-10-12 -->
+
+    <!--// popup 2022-10-12-->
+
+    <!-- popup 2022-08-31 -->
+
+    <!--// popup 2022-08-31-->
+
+    <!-- popup 2022-03-14 -->
+
+    <!--// popup 2022-03-14-->
+
+    <!-- popup 20190806 -->
+
+    <!--// popup 20190806 -->
+
+
+
+    <!-- popup 2021-08-11 -->
+
+    <!--// popup 2021-08-11 -->
+
+    <!-- popup 2021-08-23 -->
+
+    <!--// popup 2021-08-23 -->
+
+    <!-- popup 2021-09-10 -->
+
+    <!--// popup 2021-09-10-->
+
+    <!-- popup 2020-07-13 -->
+
+    <!--// popup 2020-07-13 -->
+
+    <!-- 리뉴얼 푸터 -->
+    <footer id="footer">
+        <!-- pc footer -->
+        <section class="footer_wrap mobile_none">
+            <div class="cu_info_footer">
+                <div class="logo_wrap">
+                    <h2 class="logo">
+                        <a href="/index.do"><span class="blind">CU</span></a>
+                    </h2>
+                </div>
+                <address class="footer_address">
+                    <p> BGF리테일 서울시 강남구 테헤란로 405(삼성동)</p>
+                    <p class="copy_right">COPYRIGHT &copy; BGFretail ALL RIGHT RESERVED.</p>
+                </address>
+                <p class="footer_tel">TEL: 1577-8007</p>
+                <div id="sns_buttons">
+                    <ul class="footer_sns">
+                        <li>
+                            <a href="https://www.facebook.com/CU.BGFretail.cvs/" target="_blank">
+                                <img id="sns_facebook" src="/images/common/new/footer_facebook.png" alt="Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/BGFretail" target="_blank">
+                                <img id="sns_twitter" src="/images/common/new/footer_twitter.png" alt="Twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://blog.bgfcu.com" target="_blank">
+                                <img src="/images/common/new/footer_blog.png" alt="Blog" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quick_menu">
+                <strong class="footer_sub_tit">Quick Menu</strong>
+                <nav class="quick_menu_box">
+                    <ul class="footer_ulcnt">
+                        <li><a href="/consult/consult01.do" target="_blank">입점상담</a></li>
+                        <!-- issues/2153#note_92253 수정 -->
+                        <li><a href="#none" class="btn_layer" open-layer-class="ad_inquiry">제휴/광고 문의</a></li>
+                        <!-- issues/2776 추가 -->
+                        <li><a href="/store/list.do?category=store&sf=N">매장찾기</a></li>
+                        <li><a href="http://mkr.bgfretail.com/" target="_blank">발주 및 배송데이터</a></li>
+                        <li><a href="http://etax.bgfretail.com/index.jsp" target="_blank">전자세금계산서</a></li>
+                    </ul>
+                    <ul class="footer_ulcnt">
+                        <li><a href="https://www.pocketcu.co.kr/auth/owner" target="_blank">점주인증</a></li>
+                        <li><a href="https://www.pocketcu.co.kr/auth/emp" target="_blank">임직원인증</a></li>
+
+                        <li><a href="https://www.pocketcu.co.kr/policy/policy/pc/privacyPolicy" class="footer_purple"
+                                target="_blank">개인정보처리방침</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="family_site">
+                <strong class="footer_sub_tit">Family Site</strong>
+                <nav class="family_site_box">
+                    <ul class="footer_ulcnt">
+                        <li><a href="http://www.bgf.co.kr" target="_blank">BGF</a></li>
+                        <li><a href="http://www.bgfretail.com/" target="_blank">BGF리테일</a></li>
+                        <li><a href="https://www.pocketcu.co.kr" target="_blank">포켓CU</a></li> <!--url 추후기입-->
+                        <li><a href="http://www.bgfnetworks.com/" target="_blank">BGF네트웍스</a></li>
+                    </ul>
+                    <ul class="footer_ulcnt">
+                        <li><a href="http://www.bgfhumannet.com/" target="_blank">BGF휴먼넷</a></li>
+                        <li><a href="http://www.bgflogis.com/" target="_blank">BGF로지스</a></li>
+                        <li><a href="http://www.cupost.co.kr" target="_blank">BGF포스트</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!--// pc footer -->
+        <!-- mo footer -->
+        <section class="footer_wrap pc_none">
+            <div class="cu_info_footer">
+                <div class="logo_wrap">
+                    <h2 class="logo">
+                        <a href="/index.do"><span class="blind"><!--CU--></span></a>
+                    </h2>
+                </div>
+            </div>
+            <div class="quick_menu">
+                <nav class="quick_menu_box">
+                    <ul class="footer_ulcnt">
+                        <li><a
+                                href="/enter/info_01.do;jsessionid=L9VnjTxTwnhbC7zvbNYlGxDwT27frp9Lvyh2S5xXv4VhG22yqJ6m!1480072461?category=enter&sf=N">거래상담</a>
+                        </li>
+                        <li><a href="#none" class="btn_layer" open-layer-class="ad_inquiry">제휴/광고 문의</a></li>
+                        <!-- issues/2776 추가 -->
+                        <li><a
+                                href="/store/list.do;jsessionid=L9VnjTxTwnhbC7zvbNYlGxDwT27frp9Lvyh2S5xXv4VhG22yqJ6m!1480072461? category=store&sf=N">매장찾기</a>
+                        </li>
+                        <li><a href="http://etax.bgfretail.com/index.jsp" target="_blank">전자세금계산서</a></li>
+
+                        <li><a href="https://www.pocketcu.co.kr/auth/emp" target="_blank">임직원인증</a></li>
+
+                    </ul>
+                    <ul class="footer_ulcnt">
+                        <li><a href="http://mkr.bgfretail.com/" target="_blank">발주 및 배송데이터</a></li>
+
+                        <li class="footer_bold"><a href="https://www.pocketcu.co.kr/policy/policy/privacyPolicy"
+                                target="_blank">개인정보처리방침</a></li>
+
+
+
+                        <li><a href="https://www.pocketcu.co.kr/auth/owner" target="_blank">점주인증</a></li>
+                        <li><a href="https://www.pocketcu.co.kr/auth/memp" target="_blank">지주사인증</a></li>
+                        <li><a href="https://www.pocketcu.co.kr/auth/semp" target="_blank">계열사인증</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- 위치변경 -->
+            <address class="footer_address">
+                <p> BGF리테일 서울시 강남구 테헤란로 405(삼성동)</p>
+                <p class="copy_right">COPYRIGHT &copy; BGFretail ALL RIGHT RESERVED.</p>
+            </address>
+            <p class="footer_tel">TEL: 1577-8007</p>
+
+            <!-- 관련사이트 탭 만들기 -->
+            <div class="select_wrap">
+                <select title="관련사이트" class="select_family family_site" onchange="goFamilySite();">
+                    <option value="https://www.bgf.co.kr">관련사이트</option>
+                    <option value="http://www.bgf.co.kr/m">BGF</option>
+                    <option value="http://www.bgfretail.com/companyM/main.do">BGF리테일</option>
+                    <option value="https://www.pocketcu.co.kr">포켓CU</option>
+                    <option value="http://www.bgfnetworks.com/">BGF네트웍스</option>
+                    <option value="http://www.bgfhumannet.com/">BGF휴먼넷</option>
+                    <option value="http://www.bgflogis.com/">BGF로지스</option>
+                    <option value="https://www.cupost.co.kr/postbox/main.cupost">BGF포스트</option>
+                </select>
+            </div>
+        </section>
+        <!--// mo footer -->
+    </footer>
+    <!--// 리뉴얼 푸터 -->
+    <!-- [팝업]제휴/광고 문의 --> <!-- issues/2776 추가 -->
+    <section class="ad_inquiry layer_pop" style="display:none;">
+        <a href="#none" class="closed">
+            <span class="blind">팝업 닫기</span>
+        </a>
+        <!-- 컨텐츠 -->
+        <div class="contents">
+            <section class="inquiry_info">
+                <h2 class="tit">제휴·광고 문의</h2>
+                <div class="txt">
+                    일상 가장 가까운 곳에서 <br>
+                    언제 어디서나 만날 수 있는 CU와 함께 해보세요!<br><br>
+
+                    아래 주소로 이름, 소속(회사명), 연락처, 문의내용을 <br>
+                    보내주시면 연락드리겠습니다.
+                </div>
+                <div class="inquiry_box">
+                    <ul>
+                        <li>
+                            <p>온라인 제휴/광고<span>(포켓CU 앱, 멤버십)</span></p>
+                            <a href="mailto:ejlee2198@bgf.co.kr">ejlee2198@bgf.co.kr</a>
+                        </li>
+                        <li>
+                            <p>마케팅 제휴</p>
+                            <a href="mailto:scottjeon.sj@bgf.co.kr">scottjeon.sj@bgf.co.kr</a>
+                        </li>
+                        <li>
+                            <p>SNS 콘텐츠 제휴/광고<span>(유튜브, 인스타그램 등)</span></p>
+                            <a href="mailto:iffuss@bgf.co.kr">iffuss@bgf.co.kr</a>
+                        </li>
+                        <li>
+                            <p>생활 서비스 제휴</p>
+                            <a href="mailto:jdw3449@bgf.co.kr">jdw3449@bgf.co.kr</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!--// [팝업]제휴/광고 문의 -->
+
+
+    </div>
+
+    <!-- popup 20190207 -->
+    <script type="text/javascript">
+        function getCookie(name) {
+            var nameOfCookie = name + "=";
+            var x = 0;
+            while (x <= document.cookie.length) {
+                var y = (x + nameOfCookie.length);
+                if (document.cookie.substring(x, y) == nameOfCookie) {
+                    if ((endOfCookie = document.cookie.indexOf(";", y)) == -1)
+                        endOfCookie = document.cookie.length;
+                    return unescape(document.cookie.substring(y, endOfCookie));
+                }
+
+                x = document.cookie.indexOf(" ", x) + 1;
+
+                if (x == 0) break;
+            }
+
+            return "";
+        }
+
+        function setCookie(name, value, expiredays) {
+            var todayDate = new Date();
+            todayDate.setDate(todayDate.getDate() + expiredays);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+
+        function search() {
+            var searchKeyword = $('#search_prd').val().trim();
+            if (searchKeyword == null || searchKeyword == '') {
+                location.href = "/product/product.do?category=product&depth2=4&sf=N";
+            } else {
+                location.href = "/product/search.do?searchKeyword=" + searchKeyword;
+            }
+        }
+
+        function storeSearch() {
+            var searchKeyword = $('#search_cu').val().trim();
+            if (searchKeyword == null || searchKeyword == '') {
+                location.href = "/store/list.do?category=store";
+            } else {
+                location.href = "/store/list.do?category=store&jumpoName=" + searchKeyword;
+            }
+        }
+
+        $(document).ready(function () {
+            // 오늘 하루 안보기
+            $(".notToday").click(function () {
+                var popupId = $(this).attr("id").replace("notToday_", "");
+                setCookie(popupId, "Y", "9999999999");
+                $("#" + popupId).hide();
+                return false;
+            });
+
+            // 닫기
+            $("a.Btnclose").click(function () {
+                var popupId = $(this).attr("id").replace("close_", "");
+                $("#" + popupId).hide();
+                return false;
+            });
+
+            $.each($(".openpopup_wrapper"), function (idx, data) {
+                if (getCookie(data.id) != "Y") {
+                    //$("#" + data.id).show();
+                } else {
+                    $("#" + data.id).hide();
+                }
+            });
+        });
+    </script>
+    <!--// popup 20190207 -->
+
+    <!-- facebook ui template -->
+
+    <!--
+
+<script type="text/x-tmpl" id="tmpl-fb">
+
+<li>
+
+	<div class="snsListReal">
+
+		<div class="photo"><img src="/images/main/sns_cu.gif" alt="CU" /></div>
+
+		<div class="snsInfo">
+
+			<p>CU Facebook</p>
+
+			<div>{%=o.content%}</div>
+
+		</div>
+
+	</div>
+
+</li>
+
+</script>
+
+-->
+
+
+
+    <!-- twitter ui template -->
+
+    <script type="text/x-tmpl" id="tmpl-twitter">
+
+<li>
+
+	<div class="snsListReal">
+
+		<div class="photo"><img src="/images/main/sns_cu.gif" alt="CU" /></div>
+
+		<div class="snsInfo">
+
+			<p>CU Twitter</p>
+
+			<div>{%=o.text%}</div>
+
+		</div>
+
+	</div>
+
+</li>
+
+</script>
+
+
+
+    <!-- naver blog ui template -->
+
+    <script type="text/x-tmpl" id="tmpl-blog">
+
+<li>
+
+	<div class="content">
+
+		<p class="title"><a href="{%=o.url%}" target="_blank">{%=o.title%}</a>
+
+		{%=o.published%}</p>
+
+	</div>
+
+</li>
+
+</script>
+
+
+
+    <script type="text/javascript">
+
+        (function (w, d, a) {
+
+            w.__beusablerumclient__ = {
+
+                load: function (src) {
+
+                    var b = d.createElement("script");
+
+                    b.src = src;
+
+                    b.async = true;
+
+                    b.type = "text/javascript";
+
+                    d.getElementsByTagName("head")[0].appendChild(b);
+
+                }
+
+            };
+
+            w.__beusablerumclient__.load(a);
+
+        })(window, document, '//rum.beusable.net/script/b170310e102904u851/38edbb6906');
+
+    </script>
+
+</body>
+
+</html>

@@ -34,16 +34,40 @@
 }
 
 
-#header {}
+#header {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    line-height: 60px;
+    background: #fff;
+}
 
+#header.on {
+    top: 0;
+}
 
 #header .inner {
     display: flex;
+    justify-content: space-between;
 }
 
-#header .inner .gnb ul {
+#header .gnb>ul {
     display: flex;
+    gap: 30px;
 }
+
+#header .gnb>ul>li {
+    position: relative;
+    text-align: center;
+}
+
+#header .gnb>ul>li>a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#header .gnb>ul>li>.smenu {}
 
 
 
