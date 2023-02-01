@@ -2,16 +2,17 @@ $(function () {
     $(window).on('scroll', function () {
 
         if ($(window).scrollTop() > 0) {
-            $('.header').addClass('on');
+            $('#header').addClass('on');
         } else {
-            $('.header').removeClass('on');
+            $('#header').removeClass('on');
         }
     })
 
     $('.main_slide').slick({
         slidesToShow: 3,
+        slidesToScroll: 3,
         arrows: true,
-        dots: false,
+        dots: true,
         autoplay: true,
         autoplaySpeed: 4000,
     })
