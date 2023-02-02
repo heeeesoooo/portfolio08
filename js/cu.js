@@ -11,15 +11,24 @@ $(function () {
     $('.main_slide').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
-        arrows: true,
+        arrows: false,
         dots: true,
         autoplay: true,
         autoplaySpeed: 4000,
     })
+
+    $('#mainVisual .arrows .prev').on('click', function () {
+        $('.main_slide').slick('slickPrev')
+    })
+
+    $('#mainVisual .arrows .next').on('click', function () {
+        $('.main_slide').slick('slickNext')
+    })
+
     $('.product_slide').slick({
         slidesToShow: 5,
         slidesToScroll: 5,
-        arrows: true,
+        arrows: false,
         dots: false,
         autoplay: true,
         autoplaySpeed: 4000,
@@ -27,9 +36,24 @@ $(function () {
     $('.plus_goods_slide').slick({
         slidesToShow: 5,
         slidesToScroll: 5,
-        arrows: true,
+        arrows: false,
         dots: false,
         autoplay: true,
         autoplaySpeed: 4000,
+    })
+
+    $('#hot_issue .arrows .prev').on('click', function () {
+        $('.product_slide').slick('slickPrev')
+    })
+
+    $('#hot_issue .arrows .next').on('click', function () {
+        $('.product_slide').slick('slickNext')
+    })
+    $('#plus_goods .arrows .prev').on('click', function () {
+        $('.product_slide').slick('slickPrev')
+    })
+
+    $('#plus_goods .arrows .next').on('click', function () {
+        $('.product_slide').slick('slickNext')
     })
 })

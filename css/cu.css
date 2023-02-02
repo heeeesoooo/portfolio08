@@ -2,6 +2,12 @@
 .inner {
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
+}
+
+.f_inner {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -98,6 +104,7 @@
 .mainTitle_sec01 {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 10px 0;
 }
 
 .mainTitle_sec01 h2 {
@@ -105,28 +112,32 @@
     font-size: 130px;
     font-weight: 700;
     letter-spacing: 15px;
+    margin: auto 0;
 }
 
-#mainTitle p {
+
+.link_more a {
     position: relative;
     font-size: 25px;
     font-weight: 800;
-    color: rgb(101, 47, 141);
+    color: #652f8d;
     font-family: 'Cafe24Ssurround';
 }
 
-#mainTitle p::after {
-    content: "\e93f";
-    font-family: xeicon !important;
-    background: rgb(101, 47, 141);
+.link_more i {
+    position: absolute;
+    background: #652f8d;
     color: #fff;
     border-radius: 50%;
     margin: 0 0 0 10px;
+    top: 40%;
+    transform: translate(0, -50%);
 }
 
 /* ---------------mainVisual-------------- */
 #mainVisual {
-    padding: 0 0 100px 0;
+    position: relative;
+    margin: 0 0 150px 0;
 }
 
 #mainVisual .main_slide {
@@ -151,6 +162,7 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    bottom: -30px;
 }
 
 .main_slide .slick-dots li {
@@ -163,7 +175,7 @@
 }
 
 .main_slide .slick-dots li.slick-active {
-    background: rgb(170, 204, 57);
+    background: #37d243;
     width: 20px;
     border-radius: 10px;
 }
@@ -172,7 +184,207 @@
     display: none;
 }
 
-.main_slide
-/* * {
+#mainVisual .arrows a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+}
+
+#mainVisual .arrows .prev {
+    margin: 0 0 0 -300px;
+}
+
+#mainVisual .arrows .next {
+    margin: 0 0 0 300px;
+}
+
+/* ---------------상품 슬라이드 기본 설정-------------- */
+.product {
+    padding: 0 0 150px 0;
+}
+
+.product_slide {
+    margin: 0 -30px 0 -30px;
+}
+
+.product .inner>h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.view_more {
+    color: #652f8d;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+    position: relative;
+    text-align: right;
+    padding: 0 30px 0 0;
+}
+
+.view_more i {
+    position: absolute;
+    background: #652f8d;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+    right: 0;
+}
+
+.slide_wrap {
+    position: relative;
+}
+
+.slide_wrap figure {
+    position: relative;
+    margin: 0 30px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 20px;
+}
+
+.slide_wrap .prod_wrap {
+    padding: 10px;
+}
+
+.slide_wrap .prod_wrap img {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.slide_wrap figure .tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.slide_wrap .prod_text p {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.slide_wrap .prod_text span {
+    font-size: 20px;
+}
+
+.slide_wrap .prod_text strong {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.slide_wrap .arrows a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+}
+
+.slide_wrap .arrows .prev {
+    margin: 0 0 0 -650px;
+}
+
+.slide_wrap .arrows .next {
+    margin: 0 0 0 650px;
+}
+
+
+
+/* ---------------cu_app-------------- */
+
+#cu_app {
+    padding: 0 0 150px 0;
+}
+
+#cu_app .f_inner {
+    background: #e9e7f6;
+    border-radius: 20px;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#cu_app .app_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cu_app .app_content .text_box {
+    padding: 40px 0 0 40px;
+}
+
+#cu_app .app_content .title_p {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+#cu_app .app_content .sub_p {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#cu_app .app_content .down_box {
+    padding: 60px 40px 0 0;
+}
+
+#cu_app .app_content .down_box a {
+    background: #652f8d;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#cu_app .app_content .down_box i {
+    margin: 0 0 0 20px;
+}
+
+
+/* ---------------plus_goods-------------- */
+
+#plus_goods .tag {
+    background: #37d243;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*  */
+.flex_inner {
+    display: flex;
+}
+
+/* 검색 왼쪽 sec */
+
+.flex_inner .left {
+    width: 50%;
+    margin: auto 0;
+}
+
+.flex_inner .right {
+    /* width: 50%; */
+}
+
+.flex_inner .left .title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.flex_inner .left .txt {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+/* ---------------now_need-------------- */
+* {
     outline: 1px solid tomato
-} */
+}
