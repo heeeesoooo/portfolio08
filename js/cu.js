@@ -56,4 +56,11 @@ $(function () {
     $('#plus_goods .arrows .next').on('click', function () {
         $('.product_slide').slick('slickNext')
     })
+
+    $('.store_slide').slick({
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+    })
 })
