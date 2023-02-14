@@ -16,7 +16,6 @@
 
 #topBanner .inner ul {
     display: flex;
-    gap: 30px;
     line-height: 15px;
     justify-content: right;
 }
