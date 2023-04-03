@@ -63,4 +63,10 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 4000,
     })
+
+    $('header .right').on('click', function () {
+        $(this).toggleClass('on');
+        $('.menu_cover').toggleClass('on');
+    });
+
 })
