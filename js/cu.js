@@ -12,9 +12,19 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: false,
-        dots: true,
+        dots: false,
         autoplay: true,
         autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                }
+            }
+        ]
     })
 
     $('#mainVisual .arrows .prev').on('click', function () {
@@ -32,6 +42,16 @@ $(function () {
         dots: false,
         autoplay: true,
         autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true,
+                }
+            }
+        ]
     })
     $('.plus_goods_slide').slick({
         slidesToShow: 5,
