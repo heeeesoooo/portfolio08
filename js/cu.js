@@ -89,4 +89,9 @@ $(function () {
         $('.menu_cover').toggleClass('on');
     });
 
+    $(window).on('resize', function () {
+        $('.smenu').removeAttr('style');
+        $('.gnb_menu>ul>li>a').removeClass('on');
+    })
+
 })

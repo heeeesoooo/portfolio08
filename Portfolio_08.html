@@ -185,9 +185,11 @@
             <section id="mainTitle">
                 <div class="f_inner">
                     <div class="mainTitle_sec01">
-                        <h2 class="mo_none">Hello,Friends</h2>
-                        <h2 class="pc_none">Hello,<br />Friends</h2>
-                        <img src="./img/main_title.png" alt="">
+                        <h2 class="">Hello,Friends</h2>
+                        <!-- <h2 class="pc_none">Hello,<br />Friends</h2> -->
+                        <div class="img_box">
+                            <img src="./img/main_title.png" alt="">
+                        </div>
                     </div>
                     <p class="link_more"><a href="">CU 스토리보기 <i class="xi-angle-right-min"></i> </a></p>
                     <!-- after 버튼 넣기 -->
@@ -388,15 +390,18 @@
             </section>
 
             <!-- 앱 다운로드 박스 -->
-            <section id="cu_app" class="mo_none">
+            <section id="cu_app">
                 <div class="f_inner">
                     <div class="app_content">
-                        <div class="text_box">
-                            <p class="title_p">차별화된 서비스와 풍성한 혜택이 가득! </p>
-                            <p class="sub_p">포켓CU APP 사용해보세요 :&#41;</p>
-                        </div>
-                        <div class="app_img">
-                            <img src="./img/app_01.png" alt="">
+                        <div class="app_flex">
+                            <div class="text_box">
+                                <p class="title_p mo_none">차별화된 서비스와 풍성한 혜택이 가득! </p>
+                                <p class="title_p pc_none">차별화된 서비스와 <br /> 풍성한 혜택이 가득! </p>
+                                <p class="sub_p mo_none">포켓CU APP 사용해보세요 :&#41;</p>
+                            </div>
+                            <div class="app_img">
+                                <img src="./img/app_01.png" alt="">
+                            </div>
                         </div>
                         <div class="down_box">
                             <a href="https://pocketcu.co.kr" class="btn_go" target="_blank" title="포켓CU 다운받기">
@@ -561,7 +566,7 @@
                     <div class="left">
                         <h2 class="title">지금 나에게 필요한건?</h2>
                         <p class="txt">CU의 다양한 상품들을 소개합니다!</p>
-                        <div class="cont_wrap mo_none">
+                        <div class="cont_wrap">
                             <div class="search">
                                 <input type="text" class="input_search" placeholder="연세우유 크림빵을 검색해보세요!" />
                                 <a href=""><i class="xi-search"></i></a>
@@ -623,14 +628,14 @@
                         <a href="" class="franchise_bnr">
                             <h2 class="title">창업안내</h2>
                             <p class="txt">점주님들의 성공을 <br />최우선으로 생각하는</p>
-                            <i class="xi-arrow-right"></i>
+                            <div class="arrow_right">.</div>
                         </a>
                     </div>
                     <div class="cont_wrap">
                         <a href="" target="_blank" class="cs_bnr">
                             <h2 class="title">고객센터</h2>
                             <p class="txt">상품문의, 창업상담 무엇을 <br />도와드릴까요?</p>
-                            <i class="xi-arrow-right"></i>
+                            <div class="arrow_right">.</div>
                         </a>
                     </div>
                 </div>
@@ -667,7 +672,7 @@
                     <div class="cont_wrap">
                         <div class="cont_left">
                             <h2 class="title">CU 스토리</h2>
-                            <div class="story_column story01">
+                            <div class="story_column story01 mo_none">
                                 <a href="">
                                     <figure>
                                         <img src="./img/cu_story_01.png" alt="">
@@ -678,7 +683,7 @@
                             </div>
                         </div>
                         <div class="cont_right">
-                            <div class="story_column story02">
+                            <div class="story_column story02 mo_none">
                                 <a href="https://www.bgflive.com" target="_blank">
                                     <figure>
                                         <img src="./img/cu_story_02.png" alt="">
@@ -739,9 +744,9 @@
                         <li class="black"><a href="">개인정보처리방침</a></li>
                     </ul>
                     <ul class="right">
-                        <li><a href="" target="_blank"><i class="xi-facebook"></i></a></li>
-                        <li><a href="" target="_blank"><i class="xi-twitter"></i></a></li>
-                        <li><a href="" target="_blank"><i class="xi-instagram"></i></a></li>
+                        <li class="mo_none"><a href="" target="_blank"><i class="xi-facebook"></i></a></li>
+                        <li class="mo_none"><a href="" target="_blank"><i class="xi-twitter"></i></a></li>
+                        <li class="mo_none"><a href="" target="_blank"><i class="xi-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>

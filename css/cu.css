@@ -8,6 +8,12 @@
     text-align: center;
 }
 
+@media (max-width:768px) {
+    .inner {
+        width: auto;
+    }
+}
+
 .f_inner {
     width: 1200px;
     margin: 0 auto;
@@ -15,7 +21,7 @@
 
 
 * {
-    outline: 1px solid tomato
+    /* outline: 1px solid tomato */
 }
 
 /* ---------------header-------------- */
@@ -155,30 +161,30 @@
     align-items: center;
 }
 
-.menu_cover>.inner_wrap>.gnb_menu>ul {
+.gnb_menu>ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     grid-template-rows: 1fr 1fr;
 }
 
-.menu_cover>.inner_wrap>.gnb_menu>ul>li>a {
+.gnb_menu>ul>li>a {
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
 }
 
-.menu_cover>.inner_wrap>.gnb_menu>ul>li>a:hover {
+.gnb_menu>ul>li>a:hover {
     color: #37d243;
 }
 
-.menu_cover>.inner_wrap>.gnb_menu>ul>li>ul {
+.gnb_menu>ul>li>ul {
     line-height: 35px;
     font-size: 20px;
     font-weight: 500;
 }
 
-.menu_cover>.inner_wrap>.gnb_menu>ul>li>ul>li>a:hover {
+.gnb_menu>ul>li>ul>li>a:hover {
     color: #37d243;
     text-decoration: underline;
     text-underline-offset: 8px;
@@ -303,7 +309,7 @@
 }
 
 
-.link_more a {
+.mainTitle_sec01 .link_more a {
     position: relative;
     font-size: 25px;
     font-weight: 800;
@@ -312,19 +318,16 @@
 }
 
 .link_more i {
-    position: absolute;
     background: #652f8d;
     color: #fff;
     border-radius: 50%;
-    margin: 0 0 0 10px;
-    top: 40%;
-    transform: translate(0, -50%);
 }
 
 /* ---------------mainVisual-------------- */
 #mainVisual {
     position: relative;
     margin: 0 0 150px 0;
+    width: 100%;
 }
 
 #mainVisual .main_wrap {
@@ -487,6 +490,12 @@
     justify-content: space-between;
 }
 
+#cu_app .app_flex {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
 #cu_app .app_content .text_box {
     padding: 40px 0 0 40px;
 }
@@ -508,7 +517,7 @@
 }
 
 #cu_app .app_content .down_box a {
-    background: #652f8d;
+    background: #6837f8;
     color: #fff;
     padding: 20px 30px;
     border-radius: 30px;
@@ -559,21 +568,17 @@
 }
 
 .flex_inner .left .search {
-    position: relative;
     font-size: 25px;
     line-height: 40px;
     border-bottom: 4px solid #000;
     width: 450px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .flex_inner .left .input_search {
     border: none;
-    width: 400px;
-}
-
-.flex_inner .left a {
-    position: absolute;
-    right: 0;
+    width: 100%;
 }
 
 /* ---------------지금 나에게 필요한건?-------------- */
@@ -694,10 +699,6 @@
     padding: 0 0 150px 0;
 }
 
-#search_cu .left {
-    margin: auto 0;
-}
-
 #search_cu .right {
     width: 50%;
     position: relative;
@@ -762,7 +763,7 @@
     line-height: 30px;
 }
 
-#info_banner .cont_wrap i {
+#info_banner .cont_wrap .arrow_right {
     position: absolute;
     left: 60px;
     bottom: 50px;
@@ -772,9 +773,10 @@
     transition: all 0.3s ease;
     vertical-align: middle;
     cursor: pointer;
+    font-size: 0;
 }
 
-#info_banner .cont_wrap i:after {
+#info_banner .cont_wrap .arrow_right:after {
     content: '';
     position: absolute;
     right: 0;
@@ -787,7 +789,7 @@
     transform: translateY(-50%) rotate(45deg);
 }
 
-#info_banner .cont_wrap i:before {
+#info_banner .cont_wrap .arrow_right:before {
     content: '';
     position: absolute;
     left: 0;
@@ -802,12 +804,12 @@
     color: #fff;
 }
 
-#info_banner .cont_wrap a:hover i {
+#info_banner .cont_wrap a:hover .arrow_right {
     width: 106px;
 }
 
-#info_banner .cont_wrap a:hover i:after,
-#info_banner .cont_wrap a:hover i:before {
+#info_banner .cont_wrap a:hover .arrow_right:after,
+#info_banner .cont_wrap a:hover .arrow_right:before {
     border-color: #fff;
 }
 
