@@ -84,14 +84,15 @@ $(function () {
         autoplaySpeed: 4000,
     })
 
-    $('header .right').on('click', function () {
+    $('header .right').on('click', function (e) {
+        e.preventDefault()
         $(this).toggleClass('on');
         $('.menu_cover').toggleClass('on');
     });
 
-    $(window).on('resize', function () {
-        $('.smenu').removeAttr('style');
-        $('.gnb_menu>ul>li>a').removeClass('on');
+    $('.gnb_menu>ul>li>a').on('click', function (e) {
+        e.preventDefault();
+        $(this).next().slideToggle();
     })
 
 })
