@@ -1,0 +1,566 @@
+/* @media (hover:none) {
+    .menu_cover>.inner_wrap>.gnb_menu>ul>li>a:hover {
+        color: #37d243;
+    }
+
+    .menu_cover>.inner_wrap>.gnb_menu>ul>li>ul>li>a:hover {
+        color: #37d243;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+
+    .slide_wrap figure:hover .prod_wrap>img {
+        transform: scale(1.2);
+    }
+
+    #info_banner .cont_wrap .franchise_bnr:hover {
+        background-image: url('../img/info_cu.png'), linear-gradient(67deg, #50e2c4 7%, #4f69ec);
+    }
+
+    #info_banner .cont_wrap .cs_bnr:hover {
+        background-image: url('../img/info_customer.png'), linear-gradient(67deg, #9262f3 7%, #f276d6);
+    }
+
+    #info_banner .cont_wrap a:hover .title,
+    #info_banner .cont_wrap a:hover .txt {
+        color: #fff;
+    }
+
+    #info_banner .cont_wrap a:hover i {
+        width: 106px;
+    }
+
+    #info_banner .cont_wrap a:hover i:after,
+    #info_banner .cont_wrap a:hover i:before {
+        border-color: #fff;
+    }
+} */
+@media (max-width: 400px) {
+    .mainTitle_sec01 h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .pc_none {
+        display: block;
+    }
+
+    .mo_none {
+        display: none !important;
+    }
+
+    /* ----------------------------- */
+    .inner {
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .f_inner {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: -30px;
+    }
+
+    .slick-dots li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 3px;
+        background: #ddd;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .slick-dots li.slick-active {
+        background: #37d243;
+        width: 20px;
+        border-radius: 10px;
+    }
+
+    .slick-dots>li>button {
+        display: none;
+    }
+
+    /* ---------------header-------------- */
+    #header {
+        line-height: 50px;
+    }
+
+    /* ------ toggle menu ------ */
+    .menu_cover {
+        height: 100%;
+        opacity: 0;
+        overflow-y: auto;
+    }
+
+    .menu_cover.on {
+        opacity: 1;
+    }
+
+    .menu_cover .inner_wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+
+    .gnb_menu {
+        width: 100%;
+    }
+
+    .gnb_menu>ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .gnb_menu>ul>li {
+        position: relative;
+        z-index: 999;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .gnb_menu>ul>li>a {
+        position: relative;
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 50px;
+        padding: 0 30px;
+    }
+
+    .gnb_menu>ul>li>a::after {
+        content: "\e941";
+        font-family: xeicon;
+        font-size: 20px;
+        color: #444;
+
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translate(0, -50%);
+
+        line-height: 1;
+    }
+
+    .gnb_menu>ul>li>a.on::after {
+        transform: translate(0, -50%) rotate(180deg);
+        color: #37d243;
+    }
+
+    .gnb_menu>ul>li>.smenu {
+        height: auto;
+        overflow: hidden;
+
+        background: #f7f7f7;
+        font-size: 16px;
+        line-height: 40px;
+
+        display: none;
+
+        transition: none;
+    }
+
+    .gnb_menu>ul>li>.smenu>li {
+        padding: 0 30px;
+        border-top: 1px solid #ddd;
+    }
+
+    .gnb_menu>ul>li>a.on .smenu {
+        display: block;
+    }
+
+    /*  */
+    .menu_cover .common_menu {
+        width: 100%;
+    }
+
+    .menu_cover .common_menu .member {
+        display: flex;
+        justify-content: end;
+        line-height: 50px;
+        margin: 50px 45px 10px 0;
+    }
+
+    /* ---------------mainTitle-------------- */
+    .mainTitle_sec01 {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .mainTitle_sec01 h2 {
+        font-size: 50px;
+    }
+
+    /* ---------------mainVisual-------------- */
+
+    #mainVisual .main_wrap {
+        overflow: visible;
+    }
+
+    #mainVisual .main_slide {
+        margin: 0;
+    }
+
+
+    #mainVisual .main_slide figure {
+        margin: 0;
+    }
+
+
+    /* ---------------상품 슬라이드 기본 설정-------------- */
+    .slide_wrap .hidden_wrap {
+        overflow: visible;
+    }
+
+    .slide_wrap .prod_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide_wrap .prod_wrap>img {
+        max-width: 150px;
+    }
+
+    /* ---------------hot_issue 핫이슈-------------- */
+    /* ---------------cu_app-------------- */
+
+    #cu_app {
+        padding: 0 0 100px 0;
+    }
+
+    #cu_app .f_inner {
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #cu_app .app_content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    #cu_app .app_flex {
+        display: flex;
+        gap: 30px;
+    }
+
+    #cu_app .app_content .text_box {
+        padding: 0;
+    }
+
+    #cu_app .app_content .title_p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #cu_app .app_content .down_box {
+        position: absolute;
+        bottom: 30px;
+        padding: 0;
+        display: flex;
+    }
+
+    #cu_app .app_content .down_box a {
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #cu_app .app_content .down_box i {
+        margin: 0 0 0 10px;
+    }
+
+
+
+    /*  */
+    .flex_inner {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* 검색 왼쪽 sec */
+
+    .flex_inner .left {
+        width: 100%;
+    }
+
+    .flex_inner .left .title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .flex_inner .left .txt {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .flex_inner .left .cont_wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex_inner .left .search {
+        font-size: 20px;
+        line-height: 30px;
+        width: 60%;
+    }
+
+    .flex_inner .left .input_search {
+        width: 100%;
+    }
+
+    /* ---------------지금 나에게 필요한건?-------------- */
+    #now_need {
+        position: relative;
+        padding: 0 0 100px 0;
+    }
+
+    #now_need .left {
+        padding: 0;
+    }
+
+    #now_need .right {
+        width: 100%;
+    }
+
+    #now_need .category_wrap {
+        position: relative;
+        max-width: 375px;
+        width: 100%;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    #now_need .category_wrap .big_ver img {
+        max-height: 36px;
+    }
+
+    #now_need .category_wrap .small_ver img {
+        max-height: 23px;
+    }
+
+    #now_need .category_wrap .big_ver {
+        height: 50px;
+        border-radius: 25px 25px 0 25px;
+    }
+
+    #now_need .category_wrap .small_ver {
+        height: 40px;
+        border-radius: 20px 20px 0 20px;
+    }
+
+    #now_need .category_wrap .big_ver .cate_name {
+        font-size: 18px;
+    }
+
+    #now_need .category_wrap .small_ver .cate_name {
+        font-size: 14px;
+    }
+
+    #now_need .category_wrap .cate01 {
+        padding: 7px 17px 8px 16px;
+        background: #313842;
+        left: 70px;
+        top: 0;
+    }
+
+    #now_need .category_wrap .cate02 {
+        padding: 10px 18px 9px 17px;
+        left: 102px;
+        top: 66px;
+    }
+
+    #now_need .category_wrap .cate03 {
+        padding: 9px 12px 9px 10px;
+        right: 10px;
+        bottom: 8px;
+    }
+
+    #now_need .category_wrap .cate04 {
+        padding: 8px 12px 7px;
+        right: 29px;
+        bottom: 64px;
+    }
+
+    #now_need .category_wrap .cate05 {
+        padding: 7px 17px 8px 16px;
+        left: 50%;
+        bottom: 0;
+        margin-left: -42px;
+    }
+
+    #now_need .category_wrap .cate06 {
+        padding: 9px 22px 9px 17px;
+        right: 29px;
+        top: 38px;
+    }
+
+    #now_need .category_wrap .cate07 {
+        padding: 10px 20px 11px 17px;
+        left: 10px;
+        top: 128px;
+    }
+
+    /* ---------------우리동네 cu어디있지?-------------- */
+
+    #search_cu {
+        position: relative;
+        padding: 0 0 100px 0;
+    }
+
+    #search_cu .right {
+        width: 100%;
+        position: relative;
+    }
+
+    #search_cu .right img {
+        width: 100%;
+    }
+
+    /* ---------------창업안내, 고객센터-------------- */
+    #info_banner .f_inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #info_banner .cont_wrap a {
+        height: auto;
+        border-radius: 12px;
+        padding: 30px 20px;
+    }
+
+    #info_banner .cont_wrap .title {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    #info_banner .cont_wrap .txt {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #info_banner .cont_wrap .arrow_right {
+        display: none;
+    }
+
+    #info_banner .cont_wrap .arrow_right:after {
+        content: none;
+    }
+
+    #info_banner .cont_wrap .arrow_right:before {
+        content: none;
+    }
+
+    /* ---------------스토리-------------- */
+    #story_cu .cont_wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    #story_cu img {
+        width: 70%;
+    }
+
+    #story_cu h2 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 20px 0;
+    }
+
+    #story_cu h3 {
+        font-size: 26px;
+        line-height: 40px;
+        padding: 0;
+    }
+
+    #story_cu p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    /* ---------------CU 매장-------------- */
+    #storeSlide .store_slide figure .title {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+
+        position: absolute;
+        top: 50px;
+        bottom: auto;
+        left: 20px;
+        padding: 20px 10px;
+    }
+
+    /* ---------------footer-------------- */
+    #footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    #footer .f_inner {
+        border-top: none;
+        border-right: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+
+    #footer .inner {
+        padding: 0 20px;
+    }
+
+    #footer .inner .left {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    #footer .top .left li~li::before {
+        content: none;
+    }
+
+    #footer .bottom {}
+
+    #footer .bottom #f_link {
+        width: 200px;
+    }
+
+    #footer .bottom img {
+        margin: 0 0 20px 0;
+    }
+}
